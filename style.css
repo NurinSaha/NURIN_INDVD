@@ -1,0 +1,624 @@
+* ************* header ************* *
+body {
+display: flex;
+justify-content: center; 
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: lightpink;
+  box-shadow: 0 8px 32px 0 rgba(87, 87, 87, 0.20);
+  border-radius: 10px;
+  font-family: sans-serif;
+  position: fixed;
+  width: 99%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 52px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 0 7px 10px 0;
+}
+
+.topnav a:hover {
+  background-color: #deaa88;
+  color: white;
+ padding: 25px 52px;
+}
+
+.topnav a.active {
+  background-color: lightpink;
+ padding: 25px 42px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+* *********home ************* *
+.text h2{
+font-size: 42px;
+color: white;
+}
+
+.text p{
+font-family: sans-serif;
+font-size: 19px;
+color: white;
+letter-spacing: 2px; 
+line-height: 30px;
+}
+
+.text a{
+font-family: sans-serif;
+background: #DF9A74;
+padding: 20px 28px;
+text-decoration: none;
+font-weight: bold;
+color: white;
+display: inline-block;
+border-radius: 5px;
+}
+
+span{
+color: hotpink;
+font-family: sans-serif;
+font-size: 40px;
+}
+
+.photos img{
+height: 60%;
+position: absolute;
+left: 40%;
+bottom: 80px;
+transform: translateX(-50%);
+transition: bottom 1s, left 0s;
+margin-left: 29%;
+margin-top: 25%;
+}
+
+.photos:hover .girl{
+bottom: 180px;
+}
+
+/* Create photos link */
+.link img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.link img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 31%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+div.polaroid {
+  width: 40%;
+  background-color: #EEEEEE;
+font-family: sans-serif;
+  font-color: pink;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 18px;
+  display: flex;
+position: top;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 9px;
+}
+
+/* ****** fav******* */
+.favtext h2{
+font-size: 46px;
+  letter-spacing: 6px; 
+  font-family: sans-serif;
+  color: white;
+}
+
+.favtext p{
+letter-spacing: 2px; 
+  line-height: 30px;
+ font-size: 18px;
+ color: white;
+font-family: sans-serif;
+}
+
+.favtext ul{
+letter-spacing: 2px; 
+  line-height: 30px;
+ font-size: 18px;
+ color: white;
+font-family: sans-serif;
+border-radius: 4px;
+}
+
+.favtext ol{
+letter-spacing: 2px; 
+  line-height: 30px;
+ font-size: 18px;
+ color: white;
+font-family: sans-serif;
+}
+
+/* ********** Skills******* */
+.div h1{
+  font-size: 46px;
+  letter-spacing: 6px; 
+  font-family: sans-serif;
+  color: white;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   { left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  { left:0px; top:200px;}
+  100% { left:0px; top:0px;}
+}
+
+.div p{
+letter-spacing: 2px; 
+  line-height: 30px;
+ font-size: 18px;
+ color: white;
+font-family: sans-serif;
+}
+
+.skillstext h1{
+font-size: 30px;
+  letter-spacing: 6px; 
+  font-family: sans-serif;
+  color: white;
+}
+
+.skillstext p{
+letter-spacing: 2px; 
+  line-height: 30px;
+ font-size: 18px;
+color: white;
+font-family: sans-serif;
+}
+
+/* ******* gallery****** */
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* ********* Education******** */
+.edutext h2{
+  font-size: 40px;
+  letter-spacing: 4px; 
+  font-family: sans-serif;
+  color: white;
+}
+
+.edutext p{
+letter-spacing: 2px; 
+  line-height: 30px;
+ font-size: 18px;
+color: white;
+font-family: sans-serif;
+}
+
+.tabletext td{
+  font-size: 18px;
+  letter-spacing: 4px; 
+  font-family: sans-serif;
+  color: white;
+  text-align: justify;
+}
+/* *********** work experience ********* */
+.worktext h2{
+  font-size: 40px;
+  letter-spacing: 4px; 
+  font-family: sans-serif;
+  color: white;
+}
+
+.worktext p{
+  letter-spacing: 2px; 
+  line-height: 32px;
+ font-size: 18px;
+color: white;
+font-family: sans-serif;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+}
+
+.box .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: hotpink;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.box .btn:hover {
+  background-color: #DF9A74;
+  color: white;
+}
+
+section h1{
+font-size: 30px;
+color: white;
+font-family: sans-serif;
+background-color: none;
+}
+
+section p{
+line-height: 24px;
+letter-spacing: 2px; 
+ font-size: 18px;
+color: white;
+font-family: sans-serif;
+}
+
+/* The hero image */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("ASSESTS/PHOTOS/BANNER1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: hotpink;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 7px 7px;
+  letter-spacing: 3px; 
+  line-height: 20px;
+  font-family: sans-serif;
+}
+
+.hero-text button:hover {
+  background-color: #DF9A74;
+  color: white;
+}
+
+
+/* ** scrolled image** */
+div.scroll-container {
+  background-color: #DF9A74;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
+/* *********** contact form************* */
+.contacttext pre{
+font-size: 30px;
+letter-spacing: 7px; 
+line-height: 50px;
+color: white;
+font-family: sans-serif;
+}
+
+.container {
+position: top; 
+margin-top: 200px; 
+background: white; 
+color: white;
+width: 500px; 
+height: fit-content; 
+padding: 40px 0; 
+text-align: center; 
+border-radius: 15px; 
+overflow: hidden; 
+z-index: 2;
+}
+ 
+.container input, container button { 
+height: 40px; 
+width: 90%; 
+border-radius: 100px; 
+font-size: 18px;
+}
+.container input {
+border: 2px solid lightpink;
+padding-left: 20px;
+margin-bottom: 26px; 
+transition: .4s;
+}
+ 
+.container input:focus { border: 2px solid lightpink; }
+ 
+.container button {
+Cursor: pointer; 
+background: hotpink; 
+border-radius: 100px; 
+border-color: white;
+font-size: 18px;
+color: white;
+letter-spacing: 4px; 
+transition: .4s;
+}
+ 
+container button: hover { background: white; }
+
+ ul {
+width: 600px; 
+height: 100px; 
+background: pink; 
+border-radius: 90px;
+padding-left: 20px;
+padding-right: 20px;
+margin-top: -80px;
+}
+ 
+
+/* ****** end contact form****** */
+
+/* *********** search pop up************* */
+.searchtext h2{
+letter-spacing: 2px; 
+  line-height: 30px;
+}
+
+.searchtext p{
+letter-spacing: 2px; 
+  line-height: 30px;
+}
+
+.search popup{
+background: white;
+position: fixed;
+left: 0;
+top: 0;
+height: 100vh;
+width: 100%;
+z-index: 6;
+opacity: 0;
+visibility: hidden;
+}
+
+.search-popup.visible{
+opacity: 1;
+visibility: visible;
+animation: growOut 500ms ease-in-out forwards;
+}
+
+.search-popup . search-content {
+position: absolute;
+top: 40%
+left: 50%
+width: 650px;
+transform: translate(-50%, -50%);
+}
+
+.search-popup .btn-close{
+right: 10px;
+top: 10px;
+position: absolute;
+}
+
+.btn{
+color: #fff;
+border: 0;
+border-radius: 30px;
+font-family: :'poppins' san-serif;
+font-size: 14px;
+font-weight: 400;
+overflow: hidden;
+position: relative;
+display: inline-block;
+vertical-align: middle;
+white-space: nowrap;
+text-align: center;
+transition: all 0.3s ease-in-out;
+}
+
+.btn:focus{
+outline: 0;
+box-shadow: none;
+}
+
+.btn-default{
+color: #fff;
+padding: 9.5px, 36px;
+background-color: #ffb6c1;
+background-size: 200% auto;
+}
+
+.btn-default:hover{
+color: #fff;
+background-position: right center;
+}
+
+.btn-lg{
+padding: 13px 40px;
+font-size: 16px;
+}
+
+.form-control{
+display: flex;
+border-radius: 25px;
+width: 70%;
+padding: 8px 24px;
+font-size: 14px;
+line-height: 1.6;
+color: #8f9bad;
+background-color: #fff;
+background-image: none;
+border: 1px solid #ebebeb;
+box-shadow: none;
+}
+
+.form-control:focus {
+border-color: #ad1deb;
+outline: 0;
+box-show: none;
+}
+
+/* Style the footer */
+.footer {
+  background-color: pink;
+  padding: 6px;
+  font-family: sans-serif;
+  color: hotpink;
+  text-align: center;
+  letter-spacing: 2px; 
+  line-height: 30px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted pink;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: lightpink;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+a{
+text-decoration: none;
+color: #ffb6c1;
+}
